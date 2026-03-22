@@ -144,7 +144,7 @@ class Position(BaseModel):
     """A position in a market."""
 
     ticker: str
-    position: int  # positive = YES, negative = NO
+    position: int = 0 # positive = YES, negative = NO
     market_exposure: int = 0  # cents
     realized_pnl: int = 0  # cents
     resting_orders_count: int = 0

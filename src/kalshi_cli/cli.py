@@ -2,7 +2,7 @@
 
 import typer
 
-from .commands import reference, markets, portfolio, trading, system
+from .commands import reference, markets, portfolio, trading
 
 app = typer.Typer(
     name="kalshi",
@@ -63,4 +63,3 @@ if __name__ == "__main__":
     main()
 
 # === System Commands ===
-app.command(name="doctor")(system.doctor)
